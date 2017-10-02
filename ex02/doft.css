@@ -39,3 +39,9 @@ body {
 	bottom: 10px;
 	right: 10px;
 }
+
+.img_loupe {
+	position: absolute;
+	bottom: -20px;
+	right: 30px
+}
