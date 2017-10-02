@@ -1,3 +1,5 @@
+<!-- DIFF ENTRE DIV ET SPAN -> div = block span = inline -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +18,7 @@
 		<div class="second-container">
 
 
-			<div class="inline-block-left">
+			<div class="extern-block">
 				<img src="resources/arrow.png" height=70px/>
 				<img src="resources/main.png" height=70px/>
 				<div class="image-border-red">
@@ -28,17 +30,27 @@
 
 
 			<div class="inline-block-middle">
-				<img src="resources/cluster.jpg" height=500px/>
+				<img class="img-cluster" src="resources/cluster.jpg"/>
 			</div>
 
 
-			<div class="inline-block-left">
+			<div class="extern-block">
 				<img src="resources/book.png" height=70px/>
-				<img src="resources/towel.png" height=70px/>
-				<img src="resources/brick.jpg" height=70px/>
+				<img src="resources/towel.png" height=50px/>
+				<div class="image-brick"></div>
 			</div>
-
-
+		</div>
+		<div class="green-block">
+			<div>
+				Vous <span class="text-change-size">entrez</span> alors dans une grande piece remplie d'<span class="shadow-text">ordinateurs</span>...<br/>
+				<i>- Bonjour, vous êtes nouveau ici ? </i>
+			</div>
+			<div class="wrapper-input">
+			<form>
+				<input class="input-field" type="text">
+				<input type="submit" value="Repondre"/>
+			</form>
+			</div>
 		</div>
 	</div>
 </body>

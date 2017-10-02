@@ -19,33 +19,71 @@ body {
 	box-shadow: 10px 10px 12px black;
 }
 
+.text-change-size {
+	font-size: 23px;
+	font-family: monospace;
+}
+
+.shadow-text {
+	text-shadow: 2px 5px 2px red;
+}
 .second-container {
 	display: flex;
 	justify-content:space-around;
 }
 
-.inline-block-left {
+.extern-block {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: #909090;
 	border-radius: 10px;
+	height: 370px;
 	padding: 2%;
 	box-shadow: 10px 10px 12px black;
-	height: 50%;
 }
 
+.green-block {
+	background-color: rgb(140, 253, 142);
+	width: 394px;
+	font-family: sans-serif;
+	font-size: 14px;
+	border-radius: 10px;
+	padding: 1%;
+	box-shadow: 10px 10px 12px black;
+	position: relative;
+	top: -100px;
+}
 .inline-block-middle {
 	display: inline-block;
 	background-color: #909090;
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 10px 12px black;
+	width: 70%;
+}
+
+.wrapper-input {
+	margin-top: 15px;
+}
+.input-field {
+	width: 80%;
+}
+.img-cluster {
+	max-width: 100%;
+	max-height: 100%;
 }
 .image-border-red {
 	border: 6px solid red;
 	margin: 7%;
 	/*margin: 10% 1% 0% 1%;*/
+}
+
+.image-brick {
+	background: url("./resources/brick.jpg");
+	background-repeat: repeat;
+	width:130px;
+	height:73px;
 }
 .img_top {
 	position: absolute;
