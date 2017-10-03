@@ -1,0 +1,36 @@
+.container {
+	width: 5vw;
+}
+
+h1 {
+	text-align: center;
+}
+
+.tab1 {
+	margin-bottom: 80px;
+}
+
+.atomic {
+	font-size: 1.5vw;
+	text-align: center
+}
+
+.atomic_weight {
+	font-size: 1vw;
+	vertical-align: top;
+	text-align: right;
+}
+
+.atomic_number {
+	font-size: 1vw;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+.wrapper-img {
+	width: 60vw;
+}
+
+.image {
+	max-width: 100%;
+}
