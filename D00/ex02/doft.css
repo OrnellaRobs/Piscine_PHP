@@ -2,6 +2,10 @@ body {
 	background-color:#585858;
 }
 
+.title-font {
+	font-family: cursive;
+}
+
 #main-container {
 	width:80%;
 	margin: 0 auto;
@@ -32,7 +36,7 @@ body {
 	justify-content:space-around;
 }
 
-.extern-block {
+.extern-block-left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -40,6 +44,17 @@ body {
 	border-radius: 10px;
 	height: 370px;
 	padding: 2%;
+	box-shadow: 10px 10px 12px black;
+}
+
+.extern-block-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #909090;
+	border-radius: 10px;
+	height: 370px;
+	padding: 1%;
 	box-shadow: 10px 10px 12px black;
 }
 
@@ -55,13 +70,31 @@ body {
 	top: -40px;
 	left: -70px;
 }
+
 .inline-block-middle {
 	display: inline-block;
+	position: relative;
 	background-color: #909090;
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 10px 12px black;
 	width: 70%;
+}
+
+.apple-link {
+	position: absolute;
+	bottom: 19%;
+	right: 3%;
+	width: 19%;
+	height: 25%;
+}
+
+.ikea-link {
+	position: absolute;
+	bottom: 12%;
+	left: 32%;
+	width: 11%;
+	height: 31%;
 }
 
 .wrapper-input {
@@ -76,7 +109,7 @@ body {
 
 .input-submit {
 	padding: 2px 5px;
-    border:0 none;
+	border:0 none;
 	background-color: rgb(242, 241, 242);
 	font-size: 13px;
 	font-family: sans-serif;
@@ -84,8 +117,7 @@ body {
 	border-radius: 3px;
 }
 .img-cluster {
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
 }
 .image-border-red {
 	border: 6px solid red;
