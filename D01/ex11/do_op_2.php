@@ -6,6 +6,7 @@ if ($argc != 2)
 	return ;
 }
 $param1 = trim($argv[1]);
+$param1 = preg_replace('!\s+!', '', $argv[1]);
 $operator = preg_match("/[\+\-\*\%\/]/", $param1);
 if ($operator == 1)
 {
@@ -21,6 +22,13 @@ if ($operator == 1)
 		$op = '/';
 }
 $string = preg_split('/[\+\-\*\%\/]/', $param1);
+// echo "string[0] = " , "'$string[0]'", "\n";
+// echo "string[1] = " , "'$string[1]'", "\n";
+if (!is_numeric($string[0]) || !is_numeric($string[1]))
+{
+	echo "Syntax Error\n";
+	return ;
+}
 $nb_param = count($string);
 if ($nb_param != 2)
 	return ;
