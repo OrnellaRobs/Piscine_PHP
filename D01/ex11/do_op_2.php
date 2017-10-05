@@ -22,8 +22,6 @@ if ($operator == 1)
 		$op = '/';
 }
 $string = preg_split('/[\+\-\*\%\/]/', $param1);
-// echo "string[0] = " , "'$string[0]'", "\n";
-// echo "string[1] = " , "'$string[1]'", "\n";
 if (!is_numeric($string[0]) || !is_numeric($string[1]))
 {
 	echo "Syntax Error\n";
