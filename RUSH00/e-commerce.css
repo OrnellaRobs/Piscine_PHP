@@ -15,6 +15,7 @@ body {
 
 .head-bar {
 	display: flex;
+	position: relative;
 	position: column;
 	background-color: black;
 	/*rgb(248, 187, 79);*/
@@ -28,6 +29,19 @@ wh {
 	font-size: 1.4vw;
 	font-family: sans-serif;
 }
+
+txtsize {
+	color: white;
+	font-size: 1vw;
+	font-family: sans-serif;
+}
+
+txtpanier{
+	color: white;
+	font-size: 1.3vw;
+	font-family: sans-serif;
+}
+
 .middle-page {
 	display:block;
 	padding: 3%;
@@ -73,16 +87,17 @@ wh {
 }
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
-    display: inline-block;
+    display: block;
 	background: pink;
-	padding: 10%;
+	width: 100%;
+	padding: 0 3%;
 }
 #menu-deroulant ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: flex;
-	position: center;
 	background:red;
-	padding: 10%;
+	vertical-align: center;
+	padding: 5% 15%;
 	width: 100%;
 }
 #menu-deroulant a {
@@ -132,7 +147,6 @@ wh {
 
 .promo {
 	background-color: #FFBF00;
-	width:100%;
 	padding: 2% 10%;
 	font-size: 3vw;
 }
@@ -142,4 +156,47 @@ wh {
 	width: 100%;
 	padding: 1% 0%;
 	font-size: 2vw;
+}
+
+.basket {
+	position: absolute;
+	right: 0%;
+	top: 13%;
+	bottom: 18%;
+	left:88%;
+	padding: 0 3%;
+	background-color: green;
+	/*font-size: 1vw;*/
+}
+
+.inscription{
+	background-color: #0040FF;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	bottom:20%;
+	left:74%;
+	padding: 0 1%;
+	border-radius: 10px;
+
+}
+
+.connexion{
+	background-color: #6A0888;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	bottom:20%;
+	left:62%;
+	border-radius: 10px;
+	padding: 0 1%;
+}
+
+.chariot{
+	position:absolute;
+	right:12%;
+	top:13%;
+	bottom: 10%;
+	width:3%;
+	height:70%;
 }
