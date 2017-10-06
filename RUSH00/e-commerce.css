@@ -174,7 +174,8 @@ txtpanier{
 }
 
 .inscription{
-	background-color: #FF8000;
+	background-color: #2E9AFE;
+	/*#FF8000;*/
 	position: absolute;
 	right: 0%;
 	top: 20%;
@@ -202,8 +203,8 @@ txtpanier{
 	right:12%;
 	top:13%;
 	bottom: 10%;
-	width:3%;
-	height:65%;
+	width:3.2%;
+	height:63%;
 	border-radius: 25px;
 }
 
