@@ -87,18 +87,22 @@ txtpanier{
 }
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
-    display: block;
-	background: pink;
-	width: 100%;
-	padding: 0 3%;
+    display: inline-block;
+	vertical-align: center;
+	background: black;
+	padding: 5%;
+	margin:10%;
+	padding: 4% 3%;
+	margin: 4% 20%;
 }
 #menu-deroulant ul li {
 /* on enlève ce comportement pour les liens du sous menu */
-    display: flex;
+    display: inline-block;
+	flex-direction: column;
 	background:red;
-	vertical-align: center;
-	padding: 5% 15%;
-	width: 100%;
+	/*vertical-align: center;*/
+	/*padding: 5% 15%;*/
+	width: 80%;
 }
 #menu-deroulant a {
     text-decoration: none;
@@ -165,12 +169,12 @@ txtpanier{
 	bottom: 18%;
 	left:88%;
 	padding: 0 3%;
-	background-color: green;
-	/*font-size: 1vw;*/
+	background-color: #5FB404;
+	border-radius: 60px;
 }
 
 .inscription{
-	background-color: #0040FF;
+	background-color: #FF8000;
 	position: absolute;
 	right: 0%;
 	top: 20%;
@@ -182,7 +186,8 @@ txtpanier{
 }
 
 .connexion{
-	background-color: #6A0888;
+	background-color: #8904B1;
+	/*#6A0888;*/
 	position: absolute;
 	right: 0%;
 	top: 20%;
@@ -198,5 +203,10 @@ txtpanier{
 	top:13%;
 	bottom: 10%;
 	width:3%;
-	height:70%;
+	height:65%;
+	border-radius: 25px;
+}
+
+.category{
+	display: inline-flex;
 }
