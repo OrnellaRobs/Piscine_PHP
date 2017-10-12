@@ -1,8 +1,8 @@
 <?php
 
-include_once('Lannister.class.php');
-include_once('Jaime.class.php');
-include_once('Tyrion.class.php');
+include_once('../../ex04/Lannister.class.php');
+include_once('../../ex04/Jaime.class.php');
+include_once('../../ex04/Tyrion.class.php');
 
 class Stark {
 }

@@ -1,6 +1,6 @@
 <?php
 
-include('House.class.php');
+include('../../ex03/House.class.php');
 
 class DrHouse extends House {
 	public function diagnose() {

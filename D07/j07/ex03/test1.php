@@ -1,6 +1,6 @@
 <?php
 
-include('House.class.php');
+include('../../ex03/House.class.php');
 
 class HouseStark extends House {
 	public function getHouseName() {
