@@ -8,9 +8,9 @@ Class Color {
 	function __construct(array $tab) {
 		if (array_key_exists('rgb', $tab))
 		{
-			$this->red = (0xFF0000 & intval($tab['rgb'])) >> 16;
+			$this->red = (0xFF0000 & intval($tab['rgb']));
 			$this->green = (0x00FF00 & intval($tab['rgb'])) >> 8;
-			$this->blue = (0x0000FF & intval($tab['rgb']));
+			$this->blue = (0x0000FF & intval($tab['rgb'])) >> 16;
 		}
 		if (array_key_exists('red', $tab))
 			$this->red = intval($tab['red']);
@@ -35,11 +35,11 @@ Class Color {
 	}
 
 	function mult($tomult) {
-		return new Color(array('red' => $this->red * $tomult, 'green' => $this->green * $tomult, 'blue' => $this->blue * $tomult));
+		return new Color(array('red' => $this->red * $tomult->red, 'green' => $this->green * $tomult->green, 'blue' => $this->blue * $tomult->blue));
 	}
 
 	function __toString() {
-		return (vsprintf("Color( red: % 3d, green: % 3d, blue: % 3d )", array($this->red, $this->green, $this->blue)));
+		return (vsprintf("Color( red: % 3d, green: % 3d, blue: % 3d )\n", array($this->red, $this->green, $this->blue)));
 	}
 
 	function __destruct() {

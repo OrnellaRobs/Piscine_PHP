@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#balloon{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon">
+		</div>
+		<script>
+			var elem;
+
+			elem = document.getElementById('balloon');
+
+			elem.addEventListener("click", get_balloon_bigger);
+			elem.addEventListener("mouseout", get_balloon_smaller);
+			width = elem.offsetWidth;
+			height = elem.offsetHeight;
+
+			function get_balloon_bigger() {
+				console.log("BIG");
+				console.log('width', width)
+				width += 10;
+				height += 10;
+				if (width > 420)
+				{
+					width = 200;
+					height = 200;
+				}
+				elem.style.width = width + "px";
+				elem.style.height = height + "px";
+			}
+
+			function get_balloon_smaller() {
+				console.log("SMALL");
+				console.log('width', width)
+				width -= 5;
+				height -= 5;
+				if (width >= 200)
+				{
+					elem.style.width = width + "px";
+					elem.style.height = height + "px";
+				}
+			}
+		</script>
+	</body>
+</html>
