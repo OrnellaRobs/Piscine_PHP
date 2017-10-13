@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input id="left" type="text" value="">
+	<select id="select">
+		<option value="add">'+'</option>
+		<option value="sub">'-'</option>
+		<option value="mult">'*'</option>
+		<option value="div">'/'</option>
+		<option value="mod">'%'</option>
+	</select>
+	<input id="right" type="text" value="">
+	<input type="submit" value="Try me!" onClick="Result()">
+	<script>
+	function Result() {
+		var get_data = document.getElementById('select');
+		var get_left = document.getElementById('left');
+		var get_right = document.getElementById('right');
+		var result;
+		var nb1 = parseInt(get_left.value, 10);
+		var nb2 = parseInt(get_right.value, 10);
+		var zero = 0;
+		if (nb1 < 0 || nb2 < 0)
+			result = "Error :(";
+		else if (get_data.value == "add")
+			result = nb1 + nb2;
+		else if (get_data.value == "sub")
+			result = nb1 - nb2;
+		else if (get_data.value == "mult")
+			result = nb1 * nb2;
+		else if (get_data.value == "div")
+		{
+			zero = 1;
+			result = nb1 / nb2;
+		}
+		else if (get_data.value == "mod")
+		{
+			zero = 1;
+			result = nb1 % nb2;
+		}
+		if (zero == 1 && nb2 == 0)
+			result = "It's over 9000!";
+		console.log(result);
+		alert(result);
+	}
+	</script>
+</body>
+</html>
