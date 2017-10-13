@@ -5,21 +5,21 @@
 	<title></title>
 </head>
 <body>
-	<input id="left" type="text" value="">
+	<input id="left" type="text">
 	<select id="select">
-		<option value="add">'+'</option>
-		<option value="sub">'-'</option>
-		<option value="mult">'*'</option>
-		<option value="div">'/'</option>
-		<option value="mod">'%'</option>
+		<option value="add">+</option>
+		<option value="sub">-</option>
+		<option value="mult">*</option>
+		<option value="div">/</option>
+		<option value="mod">%</option>
 	</select>
-	<input id="right" type="text" value="">
+	<input id="right" type="text">
 	<input type="submit" value="Try me!" onClick="Result()">
 	<script>
 	window.setTimeout(TimeOut, 30000);
 
 	function TimeOut() {
-		alert('Please, use me...');
+		console.log()
 		window.setTimeout(TimeOut, 30000);
 	}
 

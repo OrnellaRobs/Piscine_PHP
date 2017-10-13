@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="ft_list">
+		<!-- <li>menage</li>
+		<li>cuisine</li>
+		<li>aspirateur</li> -->
+	</div>
+	<button onClick="New()" type="button">New</button>
+	<script>
+
+	todo_id = 0;
+
+	list = document.getElementById('ft_list');
+	function New() {
+
+		var to_do = prompt("");
+		if (to_do != "")
+			add(to_do);
+	}
+
+	function add(to_do)
+	{
+		console.log(to_do);
+		var node = document.createElement("li");
+		var text = document.createTextNode(to_do);
+		node.appendChild(text);
+		node.setAttribute("onclick", "delete_todo(this.id)");
+		node.setAttribute("id", "list" + todo_id);
+		list.insertBefore(node, list.childNodes[0]);
+		document.cookie = "key=" + to_do;
+		todo_id++;
+	}
+
+	function delete_todo(id_del)
+	{
+		if (confirm("Souhaitez vous vraiment supprimer ce to do?"))
+		{
+			var to_do_del = document.getElementById(id_del);
+			to_do_del.remove();
+		}
+	}
+	</script>
+</body>
+</html>
